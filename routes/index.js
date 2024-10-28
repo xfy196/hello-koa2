@@ -16,8 +16,5 @@ router.get('/json', async (ctx, next) => {
     title: 'koa2 json'
   }
 })
-router.get("/read", async(ctx, next) => {
-  ctx.body = fs.readFileSync(path.resolve(__dirname, "./user.js"),"utf-8")
-})
 
 module.exports = router
