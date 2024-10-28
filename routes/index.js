@@ -17,7 +17,7 @@ router.get('/json', async (ctx, next) => {
   }
 })
 router.get("/read", async(ctx, next) => {
-  ctx.body = fs.readFileSync(path.resolve(__dirname, "../views/index.ejs"))
+  ctx.body = fs.readFileSync(path.resolve(__dirname, "./user.js"),"utf-8")
 })
 
 module.exports = router
